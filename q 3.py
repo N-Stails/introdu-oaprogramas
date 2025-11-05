@@ -1,9 +1,12 @@
 #Arthur, Erick, Nicollas
 
-b = int(input("insira seu número: "))
-p = int(input("insira seu número: "))
-r = 1
-for i in range(p):
-    r *= b
+n = int(input("insira seu número: "))
+m = 0
+while n != 0:
+    na = n%10
+    if na > m:
+        m = na
+    n = n//10
+    n%10
 
-print(f"a potência de seu primeiro número pelo seu segundo é: {r}")
+print(f"o maior entre os algorismos inseridos é: {m}")
